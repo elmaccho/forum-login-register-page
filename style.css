@@ -18,7 +18,6 @@ body {
   width: 500px;
   height: 500px;
   background-color: rgba(36, 89, 124, 0.4588235294);
-  transition: 0.5s;
   position: relative;
   border-radius: 35px;
 }
@@ -27,7 +26,6 @@ body {
   font-size: 60px;
   display: flex;
   justify-content: center;
-  transition: 0.5s;
   margin-bottom: 70px;
 }
 .box-content .form-box {
@@ -37,7 +35,6 @@ body {
   flex-direction: column;
 }
 .box-content .form-box input, .box-content .form-box button {
-  transition: 0.5s all;
   min-width: 280px;
   height: 40px;
   border-radius: 20px;
@@ -86,7 +83,6 @@ body {
   justify-content: right;
   color: #36afff;
   text-decoration: none;
-  transition: 0.5s;
 }
 .box-content .form-box .reminder a:hover {
   color: #e6c044;
@@ -102,7 +98,6 @@ body {
 .box-content .reg-link a {
   color: #36afff;
   text-decoration: none;
-  transition: 0.3s;
   margin-left: 5px;
 }
 .box-content .reg-link a:hover {
@@ -113,7 +108,6 @@ body {
   min-width: 500px;
   height: 550px;
   background-color: rgba(36, 89, 124, 0.4588235294);
-  transition: 0.5s;
   position: relative;
   border-radius: 35px;
 }
@@ -122,7 +116,6 @@ body {
   font-size: 60px;
   display: flex;
   justify-content: center;
-  transition: 0.5s;
   margin-bottom: 30px;
 }
 .reg-box-content .reg-form-box {
@@ -132,10 +125,10 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
 }
-.reg-box-content .reg-form-box input, .reg-box-content .reg-form-box button {
-  transition: 0.5s all;
-  min-width: 280px;
+.reg-box-content .reg-form-box input[type=text], .reg-box-content .reg-form-box input[type=password] {
+  width: 280px;
   height: 40px;
+  transition: 0.5s;
   border-radius: 20px;
   background-color: transparent;
   border: 2px solid #36afff;
@@ -143,31 +136,9 @@ body {
   color: white;
   text-align: center;
 }
-.reg-box-content .reg-form-box input input:-webkit-autofill,
-.reg-box-content .reg-form-box input input:-webkit-autofill:hover,
-.reg-box-content .reg-form-box input input:-webkit-autofill:focus,
-.reg-box-content .reg-form-box input textarea:-webkit-autofill,
-.reg-box-content .reg-form-box input textarea:-webkit-autofill:hover,
-.reg-box-content .reg-form-box input textarea:-webkit-autofill:focus,
-.reg-box-content .reg-form-box input select:-webkit-autofill,
-.reg-box-content .reg-form-box input select:-webkit-autofill:hover,
-.reg-box-content .reg-form-box input select:-webkit-autofill:focus, .reg-box-content .reg-form-box button input:-webkit-autofill,
-.reg-box-content .reg-form-box button input:-webkit-autofill:hover,
-.reg-box-content .reg-form-box button input:-webkit-autofill:focus,
-.reg-box-content .reg-form-box button textarea:-webkit-autofill,
-.reg-box-content .reg-form-box button textarea:-webkit-autofill:hover,
-.reg-box-content .reg-form-box button textarea:-webkit-autofill:focus,
-.reg-box-content .reg-form-box button select:-webkit-autofill,
-.reg-box-content .reg-form-box button select:-webkit-autofill:hover,
-.reg-box-content .reg-form-box button select:-webkit-autofill:focus {
-  border: 1px solid green;
-  -webkit-text-fill-color: green;
-  -webkit-box-shadow: 0 0 0px 1000px #000 inset;
-  transition: background-color 5000s ease-in-out 0s;
-}
-.reg-box-content .reg-form-box input:focus {
+.reg-box-content .reg-form-box input[type=text]:focus, .reg-box-content .reg-form-box input[type=password]:focus {
   border-color: #e6c044;
-  min-width: 320px;
+  width: 320px;
 }
 .reg-box-content .reg-form-box .flex-row {
   display: flex;
@@ -175,19 +146,24 @@ body {
   align-items: center;
   min-width: 100%;
 }
-.reg-box-content .reg-form-box .reg_name, .reg-box-content .reg-form-box .reg_lastname {
-  min-width: 50px;
+.reg-box-content .reg-form-box .flex-row .reg_name, .reg-box-content .reg-form-box .flex-row .reg_lastname {
   width: 135px;
   margin: 0 2px;
 }
-.reg-box-content .reg-form-box .reg_name:focus, .reg-box-content .reg-form-box .reg_lastname:focus {
+.reg-box-content .reg-form-box .flex-row .reg_name:focus, .reg-box-content .reg-form-box .flex-row .reg_lastname:focus {
   border-color: #e6c044;
-  min-width: 150px;
+  width: 150px;
 }
 .reg-box-content .reg-form-box button {
   margin-top: 0px;
-  min-width: 150px;
+  width: 150px;
   cursor: pointer;
+  border: 2px solid #36afff;
+  outline: none;
+  color: white;
+  height: 40px;
+  background-color: transparent;
+  border-radius: 20px;
 }
 .reg-box-content .reg-form-box button:focus {
   background-color: #e6c044;
@@ -242,7 +218,6 @@ body {
     background-color: transparent;
     border: 2px solid #36afff;
     outline: none;
-    transition: 0.5s;
     color: white;
     text-align: center;
   }
@@ -263,23 +238,48 @@ body {
     display: flex;
     justify-content: center;
   }
-  .reg-box-content .reg-form-box input {
-    min-width: 50%;
+  .reg-box-content .reg-form-box input[type=text], .reg-box-content .reg-form-box input[type=password] {
+    width: 70%;
+    min-width: 230px;
     height: 40px;
+    transition: 0.5s;
     border-radius: 20px;
     background-color: transparent;
     border: 2px solid #36afff;
     outline: none;
-    transition: 0.5s;
     color: white;
     text-align: center;
   }
+  .reg-box-content .reg-form-box input[type=text]:focus, .reg-box-content .reg-form-box input[type=password]:focus {
+    border-color: #e6c044;
+    width: 75%;
+  }
   .reg-box-content .reg-form-box .flex-row {
     display: flex;
+    justify-content: center;
     flex-direction: column;
+    align-items: center;
+    min-width: 100%;
   }
   .reg-box-content .reg-form-box .flex-row .reg_name, .reg-box-content .reg-form-box .flex-row .reg_lastname {
-    min-width: 50%;
+    width: 70%;
+    min-width: 230px;
+    margin: 0 2px;
+  }
+  .reg-box-content .reg-form-box .flex-row .reg_name:focus, .reg-box-content .reg-form-box .flex-row .reg_lastname:focus {
+    border-color: #e6c044;
+    width: 75%;
+  }
+  .reg-box-content .reg-form-box button {
+    margin-top: 0px;
+    width: 150px;
+    cursor: pointer;
+    border: 2px solid #36afff;
+    outline: none;
+    color: white;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 20px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -307,26 +307,55 @@ body {
     margin: 0;
   }
   .reg-box-content {
-    width: 95%;
-    min-width: 300px;
+    min-width: 90%;
   }
   .reg-box-content h1 {
     color: white;
     font-size: 40px;
     display: flex;
     justify-content: center;
-    margin-bottom: 5px;
   }
-  .reg-box-content .reg-form.box input {
-    min-width: 100%;
-    height: 10px;
-  }
-  .reg-box-content .flex-row {
-    display: flex;
-    flex-direction: column;
-  }
-  .reg-box-content .flex-row .reg_name, .reg-box-content .flex-row .reg_lastname {
+  .reg-box-content .reg-form-box input[type=text], .reg-box-content .reg-form-box input[type=password] {
+    width: 70%;
+    min-width: 230px;
     height: 40px;
-    min-width: 280px;
+    transition: 0.5s;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 2px solid #36afff;
+    outline: none;
+    color: white;
+    text-align: center;
+  }
+  .reg-box-content .reg-form-box input[type=text]:focus, .reg-box-content .reg-form-box input[type=password]:focus {
+    border-color: #e6c044;
+    width: 75%;
+  }
+  .reg-box-content .reg-form-box .flex-row {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-width: 100%;
+  }
+  .reg-box-content .reg-form-box .flex-row .reg_name, .reg-box-content .reg-form-box .flex-row .reg_lastname {
+    width: 70%;
+    min-width: 230px;
+    margin: 0 2px;
+  }
+  .reg-box-content .reg-form-box .flex-row .reg_name:focus, .reg-box-content .reg-form-box .flex-row .reg_lastname:focus {
+    border-color: #e6c044;
+    width: 75%;
+  }
+  .reg-box-content .reg-form-box button {
+    margin-top: 0px;
+    width: 150px;
+    cursor: pointer;
+    border: 2px solid #36afff;
+    outline: none;
+    color: white;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 20px;
   }
 }/*# sourceMappingURL=style.css.map */
