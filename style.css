@@ -1,0 +1,332 @@
+body {
+  background-image: url("./img/background/image1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  transition: 1s;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.box-content {
+  width: 500px;
+  height: 500px;
+  background-color: rgba(36, 89, 124, 0.4588235294);
+  transition: 0.5s;
+  position: relative;
+  border-radius: 35px;
+}
+.box-content h1 {
+  color: white;
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  transition: 0.5s;
+  margin-bottom: 70px;
+}
+.box-content .form-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.box-content .form-box input, .box-content .form-box button {
+  transition: 0.5s all;
+  min-width: 280px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: transparent;
+  border: 2px solid #36afff;
+  outline: none;
+  color: white;
+  text-align: center;
+}
+.box-content .form-box input:focus {
+  border-color: #e6c044;
+  min-width: 320px;
+}
+.box-content .form-box button {
+  margin-top: 30px;
+  min-width: 150px;
+  cursor: pointer;
+}
+.box-content .form-box button:focus {
+  background-color: #e6c044;
+  border: 2px solid #e6c044;
+}
+.box-content .form-box button:hover {
+  border: 2px solid #e6c044;
+}
+.box-content .form-box ::placeholder {
+  color: white;
+  opacity: 70%;
+}
+.box-content .form-box :-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: white;
+  opacity: 70%;
+}
+.box-content .form-box ::-ms-input-placeholder { /* Microsoft Edge */
+  color: white;
+  opacity: 70%;
+}
+.box-content .form-box .reminder {
+  font-size: 13px;
+  min-width: 57%;
+  position: relative;
+  top: -12px;
+}
+.box-content .form-box .reminder a {
+  display: flex;
+  justify-content: right;
+  color: #36afff;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.box-content .form-box .reminder a:hover {
+  color: #e6c044;
+}
+.box-content .reg-link {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-size: 14px;
+}
+.box-content .reg-link a {
+  color: #36afff;
+  text-decoration: none;
+  transition: 0.3s;
+  margin-left: 5px;
+}
+.box-content .reg-link a:hover {
+  color: #e6c044;
+}
+
+.reg-box-content {
+  min-width: 500px;
+  height: 550px;
+  background-color: rgba(36, 89, 124, 0.4588235294);
+  transition: 0.5s;
+  position: relative;
+  border-radius: 35px;
+}
+.reg-box-content h1 {
+  color: white;
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  transition: 0.5s;
+  margin-bottom: 30px;
+}
+.reg-box-content .reg-form-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.reg-box-content .reg-form-box input, .reg-box-content .reg-form-box button {
+  transition: 0.5s all;
+  min-width: 280px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: transparent;
+  border: 2px solid #36afff;
+  outline: none;
+  color: white;
+  text-align: center;
+}
+.reg-box-content .reg-form-box input input:-webkit-autofill,
+.reg-box-content .reg-form-box input input:-webkit-autofill:hover,
+.reg-box-content .reg-form-box input input:-webkit-autofill:focus,
+.reg-box-content .reg-form-box input textarea:-webkit-autofill,
+.reg-box-content .reg-form-box input textarea:-webkit-autofill:hover,
+.reg-box-content .reg-form-box input textarea:-webkit-autofill:focus,
+.reg-box-content .reg-form-box input select:-webkit-autofill,
+.reg-box-content .reg-form-box input select:-webkit-autofill:hover,
+.reg-box-content .reg-form-box input select:-webkit-autofill:focus, .reg-box-content .reg-form-box button input:-webkit-autofill,
+.reg-box-content .reg-form-box button input:-webkit-autofill:hover,
+.reg-box-content .reg-form-box button input:-webkit-autofill:focus,
+.reg-box-content .reg-form-box button textarea:-webkit-autofill,
+.reg-box-content .reg-form-box button textarea:-webkit-autofill:hover,
+.reg-box-content .reg-form-box button textarea:-webkit-autofill:focus,
+.reg-box-content .reg-form-box button select:-webkit-autofill,
+.reg-box-content .reg-form-box button select:-webkit-autofill:hover,
+.reg-box-content .reg-form-box button select:-webkit-autofill:focus {
+  border: 1px solid green;
+  -webkit-text-fill-color: green;
+  -webkit-box-shadow: 0 0 0px 1000px #000 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+.reg-box-content .reg-form-box input:focus {
+  border-color: #e6c044;
+  min-width: 320px;
+}
+.reg-box-content .reg-form-box .flex-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+}
+.reg-box-content .reg-form-box .reg_name, .reg-box-content .reg-form-box .reg_lastname {
+  min-width: 50px;
+  width: 135px;
+  margin: 0 2px;
+}
+.reg-box-content .reg-form-box .reg_name:focus, .reg-box-content .reg-form-box .reg_lastname:focus {
+  border-color: #e6c044;
+  min-width: 150px;
+}
+.reg-box-content .reg-form-box button {
+  margin-top: 0px;
+  min-width: 150px;
+  cursor: pointer;
+}
+.reg-box-content .reg-form-box button:focus {
+  background-color: #e6c044;
+  border: 2px solid #e6c044;
+}
+.reg-box-content .reg-form-box button:hover {
+  border: 2px solid #e6c044;
+}
+.reg-box-content .reg-form-box ::placeholder {
+  color: white;
+  opacity: 70%;
+}
+.reg-box-content .reg-form-box :-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: white;
+  opacity: 70%;
+}
+.reg-box-content .reg-form-box ::-ms-input-placeholder { /* Microsoft Edge */
+  color: white;
+  opacity: 70%;
+}
+.reg-box-content .reg-form-box .radio {
+  display: flex;
+  flex-direction: row;
+}
+.reg-box-content .reg-form-box .radio .gender {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.reg-box-content .reg-form-box .radio .gender .gender-radio {
+  cursor: pointer;
+  position: relative;
+  top: -2px;
+  min-width: 15px;
+}
+.reg-box-content .reg-form-box .radio .gender p {
+  color: white;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .box-content {
+    background-color: rgba(36, 89, 124, 0.4588235294);
+    width: 70%;
+  }
+  .box-content .form-box input {
+    min-width: 60%;
+    height: 40px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 2px solid #36afff;
+    outline: none;
+    transition: 0.5s;
+    color: white;
+    text-align: center;
+  }
+  .box-content .form-box input[type=submit] {
+    min-width: 250px;
+    cursor: pointer;
+  }
+  .box-content .form-box .reminder {
+    font-size: 13px;
+    width: 60%;
+  }
+  .reg-box-content {
+    width: 70%;
+  }
+  .reg-box-content h1 {
+    color: white;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+  }
+  .reg-box-content .reg-form-box input {
+    min-width: 50%;
+    height: 40px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 2px solid #36afff;
+    outline: none;
+    transition: 0.5s;
+    color: white;
+    text-align: center;
+  }
+  .reg-box-content .reg-form-box .flex-row {
+    display: flex;
+    flex-direction: column;
+  }
+  .reg-box-content .reg-form-box .flex-row .reg_name, .reg-box-content .reg-form-box .flex-row .reg_lastname {
+    min-width: 50%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .box-content {
+    background-color: rgba(36, 89, 124, 0.4588235294);
+    width: 95%;
+    min-width: 100px;
+  }
+  .box-content h1 {
+    font-size: 45px;
+  }
+  .box-content .form-box input {
+    min-width: 70%;
+    height: 40px;
+  }
+  .box-content .form-box input[type=submit] {
+    min-width: 50%;
+    cursor: pointer;
+  }
+  .box-content .form-box .reminder {
+    font-size: 13px;
+    min-width: 70%;
+  }
+  body {
+    margin: 0;
+  }
+  .reg-box-content {
+    width: 95%;
+    min-width: 300px;
+  }
+  .reg-box-content h1 {
+    color: white;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+  }
+  .reg-box-content .reg-form.box input {
+    min-width: 100%;
+    height: 10px;
+  }
+  .reg-box-content .flex-row {
+    display: flex;
+    flex-direction: column;
+  }
+  .reg-box-content .flex-row .reg_name, .reg-box-content .flex-row .reg_lastname {
+    height: 40px;
+    min-width: 280px;
+  }
+}/*# sourceMappingURL=style.css.map */

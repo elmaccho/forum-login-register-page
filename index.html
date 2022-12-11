@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- BACKGROUND -->
+    <script src="./background_changer.js"></script>
+    <!-- BACKGROUND -->
+
+
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- FONT -->
+
+</head>    
+        <!-- <div class="box-content" id="login">
+            <h1>Login</h1>
+
+            <form method="get" action="/" id="log_form" class="form-box">
+                <input type="text" name="" id="log_login" placeholder="E-mail" minlength="3" maxlength="64" onkeydown="log_validation()"><br>
+                <input type="password" name="" id="log_password" placeholder="Hasło"><br>
+                <span class="reminder"><a href="">Nie pamiętam hasła</a></span>
+                <button class="submit-btn" type="submit">Zaloguj</button><br>
+            </form>
+            <span class="reg-link">Nie masz konta?<a href=""> Zarejestruj się!</a></span>
+        </div> -->
+        <div class="reg-box-content" id="register">
+            <h1>Rejestracja</h1>
+
+            <form action="/" method="post" id="reg-form-box" class="reg-form-box" autocomplete="off"><br>
+                <input type="text" name="" id="reg_email" placeholder="E-mail"><br>
+                <input type="password" name="" id="reg_pass1" placeholder="Hasło" onkeyup='check()'><br>
+                <input type="password" name="" id="reg_pass2" placeholder="Powtórz hasło" onkeyup='check()'><br>
+                <span class="flex-row">
+                    <input type="text" name="" id="reg_name" class="reg_name" placeholder="Imię"><br>
+                    <input type="text" name="" id="reg_lastname" class="reg_lastname" placeholder="Nazwisko"><br>
+                </span>
+
+                <div class="radio">
+                <label class="gender">
+                    <input type="radio" name="sex" id="sex" class="gender-radio"><p>Mężczyzna</p>
+                </label>
+                <label class="gender">
+                    <input type="radio" name="sex" id="sex" class="gender-radio"><p>Kobieta</p>
+                </label>
+            </div>
+                <button id="submitBtn" type="submit">Załóż konto</button>
+            </form>
+        </div>
+
+    <!-- VALIDATION -->
+    <script src="./validation.js"></script>
+    <!-- VALIDATION -->
+</body>
+</html>

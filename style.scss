@@ -1,0 +1,386 @@
+$border: #36afff;
+$form-box: #24597c75;
+$hover: #e6c044;
+$font: white;
+
+
+
+
+body{
+    background-image: url("./img/background/image1.jpg");
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    transition: 1s;
+
+    min-height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-sizing: border-box;
+
+    font-family: 'Roboto', sans-serif;
+}
+.box-content{
+    width: 500px;
+    height: 500px;
+    background-color: $form-box;
+    transition: 0.5s;
+    position: relative;
+
+    border-radius: 35px;
+
+    h1{
+        color: $font;
+        font-size: 60px;
+        display: flex;
+        justify-content: center;
+        transition: 0.5s;
+        margin-bottom: 70px;
+    }
+    
+    .form-box{        
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        input,button{
+            transition: 0.5s all ;
+            min-width: 280px;
+            height: 40px;
+            border-radius: 20px;
+            background-color: transparent;
+            border: 2px solid $border;
+            outline:none;
+            color:$font;
+            text-align: center;
+            
+        }
+        input:focus{
+            border-color: #e6c044;
+            min-width: 320px;
+        }
+        button{
+            margin-top: 30px;
+            min-width: 150px;
+            cursor: pointer;
+        }
+        button:focus{
+            background-color: $hover;
+            border:2px solid $hover;
+        }
+        button:hover{
+            border:2px solid $hover;
+        }
+        ::placeholder {
+            color: $font;
+            opacity: 70%;
+          }
+          :-ms-input-placeholder { /* Internet Explorer 10-11 */
+           color: $font;
+           opacity: 70%;
+          }
+          ::-ms-input-placeholder { /* Microsoft Edge */
+           color: $font;
+           opacity: 70%;
+          }
+
+        .reminder{
+            font-size: 13px;
+            min-width: 57%;
+            position: relative;
+            top: -12px;
+
+            a{
+                display: flex;
+                justify-content: right;
+                color:$border;
+                text-decoration: none;
+                transition: 0.5s;
+            }
+            a:hover{
+                color:$hover;
+            }
+        }
+    }
+    .reg-link{
+        display:flex;
+        justify-content:center;
+        flex-direction: column;
+        align-items: center;
+        color: $font;
+        font-size: 14px;
+
+        a{
+            color: $border;
+            text-decoration: none;
+            transition: 0.3s;
+            margin-left: 5px;
+        }
+        a:hover{
+            color:$hover;
+        }
+    }
+
+
+
+
+}
+
+
+.reg-box-content{
+    min-width: 500px;
+    height: 550px;
+    background-color: $form-box;
+    transition: 0.5s;
+    position: relative;
+
+    border-radius: 35px;
+
+    h1{
+        color: $font;
+        font-size: 60px;
+        display: flex;
+        justify-content: center;
+        transition: 0.5s;
+        margin-bottom: 30px;
+    }
+    
+    .reg-form-box{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+        
+
+        input,button{
+            transition: 0.5s all;
+            min-width: 280px;
+            height: 40px;
+            border-radius: 20px;
+            background-color: transparent;
+            border: 2px solid $border;
+            outline:none;
+            color:$font;
+            text-align: center;
+            -webkit-auto
+        }
+        input:-webkit-autofill {
+            background-color: red !important;
+        }
+        input:focus{
+            border-color: #e6c044;
+            min-width: 320px;
+        }
+        .flex-row{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            min-width: 100%;
+        }
+        .reg_name, .reg_lastname{
+            min-width: 50px;
+            width: 135px;
+            margin: 0 2px;
+        }
+        .reg_name:focus, .reg_lastname:focus{
+            border-color: #e6c044;
+            min-width: 150px;
+        }
+        button{
+            margin-top: 0px;
+            min-width: 150px;
+            cursor: pointer;
+        }
+        button:focus{
+            background-color: $hover;
+            border:2px solid $hover;
+        }
+        button:hover{
+            border:2px solid $hover;
+        }
+        ::placeholder {
+            color: $font;
+            opacity: 70%;
+          }
+          :-ms-input-placeholder { /* Internet Explorer 10-11 */
+           color: $font;
+           opacity: 70%;
+          }
+          ::-ms-input-placeholder { /* Microsoft Edge */
+           color: $font;
+           opacity: 70%;
+          }
+          .radio{
+            display: flex;
+            flex-direction: row;
+            
+            .gender{
+                display:flex;
+                justify-content:center;
+                align-items: center;
+                flex-direction: row;
+                margin: 0 5px;
+                cursor: pointer;
+    
+                .gender-radio{
+                    cursor: pointer;
+                    position: relative;
+                    top: -2px;
+                    min-width: 15px;
+                }
+                p{
+                    color:$font;
+                }
+              }
+          }
+    }
+}
+
+
+
+
+
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+    
+    .box-content{
+        background-color: $form-box;
+        width: 70%;
+    
+
+        .form-box{
+            input{
+                min-width: 60%;
+                height: 40px;
+                border-radius: 20px;
+                background-color: transparent;
+                border: 2px solid $border;
+                outline:none;
+                transition: 0.5s;
+                color:$font;
+                text-align: center;
+                
+            }
+            input[type="submit"]{
+                min-width: 250px;
+                cursor: pointer;
+            }
+            .reminder{
+                font-size: 13px;
+                width: 60%;
+            }
+        }
+        
+    }
+
+    .reg-box-content{
+        width:70%;
+
+        h1{
+            color: $font;
+            font-size: 40px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .reg-form-box{
+            input{
+                min-width: 50%;
+                height: 40px;
+                border-radius: 20px;
+                background-color: transparent;
+                border: 2px solid $border;
+                outline:none;
+                transition: 0.5s;
+                color:$font;
+                text-align: center;
+                
+            }
+            .flex-row{
+                display: flex;
+                flex-direction: column;
+                .reg_name,.reg_lastname{
+                    // max-width: 370px;
+                    // width: 100%;
+                    min-width: 50%;
+                }
+            }
+        }
+
+    }
+}
+@media only screen and (max-width: 767px) {
+    .box-content{
+        background-color: $form-box;
+        width: 95%;
+        min-width: 100px;
+        
+        h1{
+            font-size: 45px;
+        }
+
+        .form-box{
+            input{
+                min-width: 70%;
+                height: 40px;
+                // border-radius: 20px;
+                // background-color: transparent;
+                // border: 2px solid $border;
+                // outline:none;
+                // transition: 0.5s;
+                // color:$font;
+                // text-align: center;
+                
+            }
+            input[type="submit"]{
+                min-width: 50%;
+                cursor: pointer;
+            }
+            .reminder{
+                font-size: 13px;
+                min-width: 70%;
+            }
+        }
+    }
+
+
+    body{
+        margin:0;
+    }
+
+    .reg-box-content{
+        width:95%;
+        min-width: 300px;
+
+        h1{
+            color: $font;
+            font-size: 40px;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 5px;
+        }
+
+        .reg-form.box{
+            input{
+                min-width: 100%;
+                height: 10px;
+            }
+        
+        }
+        .flex-row{
+            display: flex;
+            flex-direction: column;
+            .reg_name,.reg_lastname{
+                height: 40px;
+                min-width: 280px;
+            }
+        }
+    }
+}
